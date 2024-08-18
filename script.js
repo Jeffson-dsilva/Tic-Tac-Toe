@@ -24,7 +24,7 @@ const winPatterns = [
     [6, 7, 8]
 ];
 
-const resetGame = () => {
+const newGame = () => {
     turnO = true;
     gameWon = false;
     enableBoxes();
@@ -184,7 +184,7 @@ const checkWinner = () => {
 
 
 const exitGame = () => {
-    resetGame();
+    newGame();
     msgContainer.classList.add("hide");
     selectMode.classList.remove("hide");
     gameContainer.classList.add("hide");
@@ -192,5 +192,5 @@ const exitGame = () => {
 
 
 
-newGameBtn.addEventListener("click", resetGame);
+newGameBtn.addEventListener("click", newGame);
 exitBtn.addEventListener("click", exitGame);
