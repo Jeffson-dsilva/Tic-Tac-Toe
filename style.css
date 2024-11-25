@@ -92,3 +92,79 @@ body {
 .hide {
     display: none;
 }
+
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .modes h1 {
+        font-size: 60px;
+    }
+
+    #aiMode, #twopMode {
+        padding: 12px 25px;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .game {
+        height: 400px;
+        width: 400px;
+        gap: 10px;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        font-size: 48px;
+    }
+
+    #new-btn, #exit-btn {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    #msg {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modes h1 {
+        font-size: 50px;
+    }
+
+    #aiMode, #twopMode {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 8px;
+    }
+
+    .game {
+        height: 300px;
+        width: 300px;
+        gap: 5px;
+    }
+
+    .box {
+        height: 80px;
+        width: 80px;
+        font-size: 36px;
+    }
+
+    #new-btn, #exit-btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #msg {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
